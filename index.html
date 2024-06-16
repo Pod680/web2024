@@ -1,0 +1,181 @@
+<!--
+    Heqiao Wang
+    8997927
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Carl Jung, analytical psychology, psychology, Jung"/>
+    <meta name="description" content="This site is about the life of Carl Jung">
+    <title>Carl Jung</title>
+</head>
+
+
+
+
+
+
+<body>
+    <!--This is the header-->
+    <header id="top">
+        <h1>Carl Jung</h1>
+    </header>
+    <!--This is the main section-->
+    <main>
+
+
+        <section class="overview" id="overview">
+            
+            <article>
+                <header>
+                    <h2>Overview</h2>
+                </header>
+                <p>
+                    <strong><em>Carl Gustav Jung</em></strong>  (26 July 1875 - 6 June 1961) was a Swiss psychiatrist, psychotherapist and psychologist. After ending a period of collaboration with Freud and involvement in the early psychoanalytic movement he went on to found the school of analytical psychology. He was a prolific author, illustrator, and correspondent, and a complex and controversial character, perhaps best known through his "autobiography" Memories, Dreams, Reflections.
+                </p>
+                <footer>
+                    <p>source: <a href="https://en.wikipedia.org/wiki/Carl_Jung#" target="_blank">Carl Jung - Wikipedia</a></p>
+                </footer>
+            </article>
+
+
+            <!--This is the showcase of images-->
+            <figure>
+                <img src="images/lossy-page1-486px-ETH-BIB-Jung,_Carl_Gustav_(1875-1961)-Portrait-Portr_14163_(cropped).jpg" width="200" height="250" alt="a photo of Jung smoking in 1935">
+                <figcaption><em>Jung</em> in 1935</figcaption>
+            </figure>
+
+        </section>
+
+
+
+
+        <section class="contents" id="biography">
+            
+            <article>
+                <header>
+                    <h2>Biography</h2>
+                </header>
+                <!--This is the showcase of blockquote-->
+                <blockquote cite="https://en.wikipedia.org/wiki/Carl_Jung#">
+                    Jung's work has been influential in the fields of psychiatry, anthropology, archaeology, literature, philosophy, psychology, and religious studies. He worked as a research scientist at the Burghölzli psychiatric hospital, in Zurich, under Eugen Bleuler. Jung established himself as an influential mind, developing a friendship with Sigmund Freud, founder of psychoanalysis, conducting a lengthy correspondence paramount to their joint vision of human psychology. Jung is widely regarded as one of the most influential psychologists in history.<br><br>
+
+                    Freud saw the younger Jung not only as the heir he had been seeking to take forward his "new science" of psychoanalysis, but as a means to legitimize his own work: Freud and other contemporary psychoanalysts were Jews facing rising antisemitism in Europe, and Jung was Christian. Freud secured Jung's appointment as president of Freud's newly founded International Psychoanalytical Association. Jung's research and personal vision, however, made it difficult to follow his older colleague's doctrine and they parted ways. This division was painful for Jung and resulted in the establishment of Jung's analytical psychology, as a comprehensive system separate from psychoanalysis. Scholar <mark><abbr title="Yosef Hayim Yerushalmi">Yosef Hayim Yerushalmi</abbr></mark> believed Jung's later antisemitic remarks may be a clue to the schism.<br><br>
+
+                    Among the central concepts of <ins>analytical psychology</ins> is individuation—the lifelong psychological process of differentiation of the self out of each individual's conscious and unconscious elements. Jung considered it to be the main task of human development. He created some of the best known psychological concepts, including synchronicity, archetypal phenomena, the collective unconscious, the psychological complex, and extraversion and introversion. Jung was also an artist, craftsman, builder, and prolific writer. Many of his works were not published until after his death and some remain unpublished.
+                </blockquote>
+               
+            </article>
+        </section>
+
+
+
+        <section>
+
+            <header>
+                <h2>Quote</h2>
+            </header>
+            <!--This is the showcase of quoting, including a cite attribute and a cite element-->
+            <q cite="https://quoteinvestigator.com/2013/01/01/einstein-imagination/">Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world.</q>
+            <!--This is the showcase of abbreviation-->
+            <cite>— Albert Einstein,<cite>source:《<abbr title="The Saturday Evening Post, What Life Means to Einstein: An Interview by George Sylvester Viereck, Start Page 17, Quote Page 117, Column 1, Saturday Evening Post Society">The Saturday Evening Post</abbr>》</cite></cite>
+
+        </section>
+        
+
+        
+
+        <section class="resources" id="resources">
+            <h2>Resources</h2>
+            <ul>
+                <li><a href="https://www.google.ca/" target="_blank" title="Google">Google</a></li>
+                <li><a href="https://www.conestogac.on.ca/" target="_blank" title="Conestoga College">Conestoga college</a></li>
+                <li><a href="https://www.amazon.ca/" target="_blank" title="Amazon">Amazon</a></li>
+              </ul>
+        </section>
+
+
+
+
+        <section class="contact" id="contact">
+            <h2>Contact Form</h2>
+            <form action="contact.php" method="post" name="contact_us" id="contact_us">
+                <!--2 Input Elements-->
+                <div>
+                    <label for="username" class="form-label">Username:</label>
+                    <input type="text" id="username" name="username" class="form-control" required placeholder="Enter your username" autofocus>
+                </div>
+                <div>
+                    <label for="password" class="form-label">Password:</label>
+                    <input type="password" id="password" name="password" class="form-control" required placeholder="Enter your password">
+                </div>
+                <!--Textarea-->
+                <div>
+                    <label for="message" class="form-label">Leave Your Message:</label>
+                    <textarea id="message" name="message" class="form-control" placeholder="Enter your message"></textarea>
+                </div>
+                <!--Dropdown Box-->
+                <div>
+                    <label for="reason" class="form-label">Reason for Contact:</label>
+                    <select id="reason" name="reason" class="form-control">
+                        <option value="refund" selected>Refund</option>
+                        <option value="support">Support</option>
+                        <option value="feedback">Feedback</option>
+                </select>
+                </div>
+                <!--Date(stands for HTML5 element)-->
+                <div>
+                    <label for="date" class="form-label">Preferred Contact Date:</label>
+                    <input type="date" id="date" name="date" reqclass="form-control" required>
+                </div>
+                <!--Submit Button-->
+                <div>
+                    <input type="reset" value="Clear Form" name="reset" class="form-control">
+                    <input type="submit" value="Submit" name="submit" class="form-control">
+                </div>
+            </form>
+        </section>
+
+
+
+
+    </main>
+
+
+
+
+    <aside>
+        <section id="moreinfo">
+            <h2>More Info</h2>
+            <p>For more info, please contact us:<a href="mailto:hwang7927@conestogac.on.ca">Heqiao Wang</a></p>
+            <!--This is the showcase of video-->
+            <!--
+            <video src="videos/Who is Carl Yung.mp4" width="600" height="440" controls></video>
+            -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/j0KzUS0b_uc?si=H4ZKCC83xBU4SFTs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <section id="notes">
+            <h2>Notes</h2>
+            <p>There is a test next week.</p>
+            <p><a href="#top">Go to top</a></p>
+        </section>
+    </aside>
+
+
+
+    <footer>
+        <p>&copy; <small>ConWiki.Conestoga</small></p>
+       
+    </footer>
+
+
+
+
+
+
+</body>
+</html>
