@@ -11,6 +11,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Carl Jung, analytical psychology, psychology, Jung"/>
     <meta name="description" content="This site is about the life of Carl Jung">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--
+    <style>
+        h1{
+            color: aqua;
+        }
+    </style>
+    -->
     <title>Carl Jung</title>
 </head>
 
@@ -25,9 +34,9 @@
         <h1>Carl Jung</h1>
     </header>
     <!--This is the main section-->
-    <main>
+    <main id="main">
 
-
+<!--
         <section class="overview" id="overview">
             
             <article>
@@ -43,13 +52,21 @@
             </article>
 
 
-            <!--This is the showcase of images-->
-            <figure>
-                <img src="images/lossy-page1-486px-ETH-BIB-Jung,_Carl_Gustav_(1875-1961)-Portrait-Portr_14163_(cropped).jpg" width="200" height="250" alt="a photo of Jung smoking in 1935">
-                <figcaption><em>Jung</em> in 1935</figcaption>
-            </figure>
-
         </section>
+-->
+
+        <section class="contents" id="h2biography">
+            <header>
+                <h2>Biography</h2>
+            </header>
+        </section>
+        
+        <section>
+        <!--This is the showcase of images-->
+        <figure id="figureOfJung">
+            <img src="images/lossy-page1-486px-ETH-BIB-Jung,_Carl_Gustav_(1875-1961)-Portrait-Portr_14163_(cropped).jpg" width="160" height="200" alt="a photo of Jung smoking in 1935">
+            <figcaption><em>Jung</em> in 1935</figcaption>
+        </figure>
 
 
 
@@ -57,16 +74,14 @@
         <section class="contents" id="biography">
             
             <article>
-                <header>
-                    <h2>Biography</h2>
-                </header>
+                
                 <!--This is the showcase of blockquote-->
                 <blockquote cite="https://en.wikipedia.org/wiki/Carl_Jung#">
                     Jung's work has been influential in the fields of psychiatry, anthropology, archaeology, literature, philosophy, psychology, and religious studies. He worked as a research scientist at the Burghölzli psychiatric hospital, in Zurich, under Eugen Bleuler. Jung established himself as an influential mind, developing a friendship with Sigmund Freud, founder of psychoanalysis, conducting a lengthy correspondence paramount to their joint vision of human psychology. Jung is widely regarded as one of the most influential psychologists in history.<br><br>
 
-                    Freud saw the younger Jung not only as the heir he had been seeking to take forward his "new science" of psychoanalysis, but as a means to legitimize his own work: Freud and other contemporary psychoanalysts were Jews facing rising antisemitism in Europe, and Jung was Christian. Freud secured Jung's appointment as president of Freud's newly founded International Psychoanalytical Association. Jung's research and personal vision, however, made it difficult to follow his older colleague's doctrine and they parted ways. This division was painful for Jung and resulted in the establishment of Jung's analytical psychology, as a comprehensive system separate from psychoanalysis. Scholar <mark><abbr title="Yosef Hayim Yerushalmi">Yosef Hayim Yerushalmi</abbr></mark> believed Jung's later antisemitic remarks may be a clue to the schism.<br><br>
+                    Scholar <mark><abbr title="Yosef Hayim Yerushalmi">Yosef Hayim Yerushalmi</abbr></mark> believed Jung's later antisemitic remarks may be a clue to the schism.
 
-                    Among the central concepts of <ins>analytical psychology</ins> is individuation—the lifelong psychological process of differentiation of the self out of each individual's conscious and unconscious elements. Jung considered it to be the main task of human development. He created some of the best known psychological concepts, including synchronicity, archetypal phenomena, the collective unconscious, the psychological complex, and extraversion and introversion. Jung was also an artist, craftsman, builder, and prolific writer. Many of his works were not published until after his death and some remain unpublished.
+                    Among the central concepts of <ins>analytical psychology</ins> is individuation—the lifelong psychological process of differentiation of the self out of each individual's conscious and unconscious elements. Jung considered it to be the main task of human development.
                 </blockquote>
                
             </article>
@@ -74,7 +89,7 @@
 
 
 
-        <section>
+        <section class="contents" id="quote">
 
             <header>
                 <h2>Quote</h2>
@@ -87,17 +102,38 @@
         </section>
         
 
-        
+    
+
+
+        <section>
+            <!--This is the showcase of video-->
+            <!--
+            <video src="videos/Who is Carl Yung.mp4" width="600" height="440" controls></video>
+            -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/j0KzUS0b_uc?si=H4ZKCC83xBU4SFTs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+
+
+        <footer>
+            <p>&copy; <small>ConWiki.Conestoga</small></p>
+           
+        </footer>
+    </main>
+
+
+
+    <aside id="aside">
+            
 
         <section class="resources" id="resources">
             <h2>Resources</h2>
             <ul>
-                <li><a href="https://www.google.ca/" target="_blank" title="Google">Google</a></li>
-                <li><a href="https://www.conestogac.on.ca/" target="_blank" title="Conestoga College">Conestoga college</a></li>
-                <li><a href="https://www.amazon.ca/" target="_blank" title="Amazon">Amazon</a></li>
+                <li><a href="https://www.britannica.com/biography/Carl-Jung" target="_blank" title="Britannica_Carl_Jung">Britannica Carl Jung</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Carl_Jung" target="_blank" title="Wikipedia_Carl_Jung">Wikipedia Carl Jung</a></li>
+                <li><a href="https://www.biography.com/scientists/carl-jung" target="_blank" title="Carl_Jung_Biography">Carl Jung Biography</a></li>
               </ul>
         </section>
-
 
 
 
@@ -116,7 +152,7 @@
                 <!--Textarea-->
                 <div>
                     <label for="message" class="form-label">Leave Your Message:</label>
-                    <textarea id="message" name="message" class="form-control" placeholder="Enter your message"></textarea>
+                    <textarea id="message" name="message" class="form-control" placeholder="Enter your message" cols="20" rows="3"></textarea>
                 </div>
                 <!--Dropdown Box-->
                 <div>
@@ -143,21 +179,18 @@
 
 
 
-    </main>
 
-
-
-
-    <aside>
         <section id="moreinfo">
             <h2>More Info</h2>
             <p>For more info, please contact us:<a href="mailto:hwang7927@conestogac.on.ca">Heqiao Wang</a></p>
-            <!--This is the showcase of video-->
-            <!--
-            <video src="videos/Who is Carl Yung.mp4" width="600" height="440" controls></video>
-            -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/j0KzUS0b_uc?si=H4ZKCC83xBU4SFTs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
         </section>
+
+
+
+
+
+
         <section id="notes">
             <h2>Notes</h2>
             <p>There is a test next week.</p>
@@ -167,10 +200,7 @@
 
 
 
-    <footer>
-        <p>&copy; <small>ConWiki.Conestoga</small></p>
-       
-    </footer>
+
 
 
 

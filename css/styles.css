@@ -1,0 +1,196 @@
+/* Heqiao Wang 8997927 */
+
+
+
+html{
+    font: normal normal 500 20px/1.5 Arial, sans-serif;  
+    color: black;
+    background-color: rgb(211, 245, 240);
+}
+body {
+    max-width: 1200px;
+    margin: 0.2rem 0.1rem;
+    padding: 0.2rem;
+    
+    /* use "auto" to center */
+}
+
+
+
+
+h1{
+    color: rgb(0, 140, 255);
+    font-size: 3rem;
+    background: linear-gradient(45deg, #b4b656 40%, #77b1fd 60%);
+    margin: auto;
+    text-align: center; 
+}
+footer{
+    font-size: 0.6rem;
+    background: linear-gradient(45deg, #b656b6 40%, #b1d3fd 60%);
+    clear: both;
+}
+#main {
+    float: left;
+    width: 70%;
+    
+}
+
+
+
+
+.contents{
+    border: 0.1rem solid #ff1e1e;
+}
+#biography{
+    float: left;
+    width: 60%;
+}
+#quote {
+    clear: both;
+    margin: 0.1rem;
+    padding: 1%;
+    border: 0.1rem solid #9e078a;
+    box-shadow: 
+                10px 0px 5px rgba(0, 0, 0, 0.5), 
+                0px 10px 5px rgba(0, 0, 0, 0.5),  
+                -10px 0px 5px rgba(0, 0, 0, 0.5); 
+}
+
+
+
+
+#figureOfJung{
+    float: left;
+    width: 24%;   
+    border: 0.1rem solid #ff1e1e;
+    border-radius: 1rem;
+    text-align: center;
+    background-color: rgb(180, 32, 94);
+}
+img {
+    border-radius: 1rem; 
+}
+figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #143e8b;
+}
+iframe{
+    border: 0.3rem solid #ff1e1e;
+}
+
+
+
+
+
+
+
+
+aside {
+    float: left;
+    width: 30%;
+    padding: 0%;
+    margin: auto;
+    font: oblique normal normal 20px/1.5 Arial, sans-serif;  
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+    line-height: 2.5rem;
+    text-align: center;
+}
+li > a{
+    color: #ff1e1e;
+}
+li > a:hover {
+    color: rgb(0, 255, 42);
+}
+label{
+    font: normal normal bold 20px/1.5 Arial, sans-serif;  
+    color: #b4b656;
+    text-align: center;
+}
+input {
+    text-align: center;
+    height: 40px;
+    width: 200px;
+}
+
+
+
+
+@media (max-width: 800px) {
+    html {
+        font-size: 16px;
+    }
+    #main, #biography, #figureOfJung, aside {
+        float: none;
+        width: 100%;
+    }
+    body {
+        padding: 0.5rem;
+        margin: 0;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    footer {
+        font-size: 0.8rem;
+    }
+    input {
+        width: 100%;
+        height: 35px;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+    .contents {
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+    }
+}
+
+
+
+
+/* for a specific class */
+.contents{
+    color: rgb(45, 45, 180);
+}
+/* for an ID */
+#biography{
+    color: rgb(248, 201, 46);
+}
+/* !important - Top priority */
+/* Children p of parent main */
+article > header{
+    font-style: italic;
+    color: rgb(251, 255, 0);
+}
+/* p right after h2 */
+h2, h3{
+    font-weight: bold;
+    font-style: italic;
+}
+/*
+h2 ~ p{
+    font-weight: bold;
+}
+*/
+#h2biography{
+    
+    margin: 0 auto; 
+    text-align: center; 
+}
+q{
+    font: normal normal 500 20px/1.5 Arial, sans-serif;  
+    color: black;
+    border: 0.1rem solid #bb01b1;
+}
+
